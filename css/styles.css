@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: white;
+    padding: 0;
+    height: 100vh; /* Altura completa del viewport */
+    width: 100vw; /* Ancho completo del viewport */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 5vw; /* Ajustado a viewport units */
+    background-color: #9CADBE;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 999; /* Asegúrate de que el header esté sobre el overlay */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Galano Grotesque', sans-serif;
+    color:#666666;
+}
+
+.logo {
+    width: 5vw; /* Ajustado a viewport width */
+    margin-right: 3vw; /* Ajustado a viewport width */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.4vw; /* Ajustado a viewport width */
+    color:#666666;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 0 2vw; /* Ajustado a viewport width */
+}
+
+.nav-links li a {
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6vw; /* Ajustado a viewport width */
+    font-family: 'Galano Grotesque', sans-serif;
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.hamburger {
+    display: none; /* Oculto por defecto */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        background-color: #9CADBE;
+        border: none;
+        color: white;
+        padding: 2vh 3vw; /* Ajustado a viewport units */
+        font-size: 5vh; /* Ajustado a viewport height */
+        cursor: pointer;
+        border-radius: 0.5vh;
+        position: fixed; /* Se mantiene fijo en la pantalla */
+        z-index: 1500; /* Está por encima del menú y el overlay */
+        top: 2vh; /* Ajustado a viewport height */
+        right: 2vw; /* Ajustado a viewport width */
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100vw; /* Oculto fuera del viewport */
+        height: 100vh; /* Ajustado a viewport height */
+        width: 40vw; /* Ajustado a viewport width */
+        background-color: #9CADBE;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start; /* Alineado a la izquierda */
+        transition: right 0.3s ease;
+        z-index: 1000; /* Menor que el hamburger para que éste se muestre encima */
+        padding-top: 4vh;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 3vh 0; /* Ajustado a viewport height */
+        padding-left: 3vw;
+    }
+
+    .nav-links li a {
+        font-size: 4vh; /* Ajustado a viewport height para mayor legibilidad */
+        padding: 2vh 2vw; /* Ajustado a viewport units */
+        text-align: left;
+        width: 100%; /* El enlace ocupa todo el ancho de li */
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 998; /* Detrás del menú y el botón */
+    }
+    
+    .overlay.active {
+        display: block;
+    } 
+
+    .nav-links.active {
+        right: 0; 
+    }
+
+    .hamburger.active {
+        position: fixed;
+        top: 2vh;
+        right: 2vw;
+        z-index: 1501; /* Mayor que el .nav-links para mantenerlo clickeable */
+    }
+
+    .logo-container h1 {
+        font-size: 5vw;
+    }
+}
