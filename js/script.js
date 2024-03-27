@@ -12,3 +12,6 @@ function closeMenu() {
     overlay.classList.remove("active");
 }
 
+function scrollToNextSection() {
+    document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
+}
