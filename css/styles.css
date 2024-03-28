@@ -1,24 +1,28 @@
 a {
     text-decoration: none;
-}   
+} 
+
+ul {
+    list-style-type: none;
+}
 
 @font-face {
     font-family: 'Galano Grotesque';
-    src: url('/public/fonts/GalanoGrotesqueAlt-Regular.woff2') format('woff2');
+    src: url('../public/fonts/GalanoGrotesqueAlt-Regular.woff2') format('woff2');
     font-weight: 400; /* Regular */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Galano Grotesque';
-    src: url('/public/fonts/GalanoGrotesque-Bold.woff2') format('woff2');
+    src: url('../public/fonts/GalanoGrotesque-Bold.woff2') format('woff2');
     font-weight: 700; /* Bold */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Quiche Flare';
-    src: url('/public/fonts/Quiche\ Flare\ W00\ Regular.woff2') format('woff2');
+    src: url('../public/fonts/Quiche\ Flare\ W00\ Regular.woff2') format('woff2');
     font-weight: 400; /* Regular */
     font-style: normal;
 }
@@ -27,38 +31,37 @@ body {
     margin: 0;
     background-color: white;
     padding: 0;
-    height: 100vh; /* Altura completa del viewport */
-    width: 100vw; /* Ancho completo del viewport */
+    height: 100vh; 
+    width: 100vw; 
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vh 5vw; /* Ajustado a viewport units */
+    padding: 1vh 5vw;
     background-color: #9CADBE;
     position: sticky;
     top: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    z-index: 999; /* Asegúrate de que el header esté sobre el overlay */
+    z-index: 999; 
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    font-family: 'Galano Grotesque', sans-serif;
 }
 
 .logo {
     width: 3.5vw;
-    margin-right: 3vw; /* Ajustado a viewport width */
+    margin-right: 3vw; 
     border: 0px;
     border-radius: 100%;
 }
 
 h1 {
     margin: 0;
-    font-size: 2.4vw; /* Ajustado a viewport width */
+    font-size: 2.4vw; 
     color:#666666;
 }
 
@@ -72,14 +75,14 @@ h1 {
 }
 
 .nav-links li {
-    padding: 0 2vw; /* Ajustado a viewport width */
+    padding: 0 2vw; 
 }
 
 .nav-links li a {
     transition: all 0.3s ease;
     color: white;
     text-decoration: none;
-    font-size: 1.4vw; /* Ajustado a viewport width */
+    font-size: 1.4vw; 
     font-family: 'Galano Grotesque', sans-serif;
 }
 
@@ -145,7 +148,7 @@ h1 {
     align-items: center;
     margin-top: 2vh;
     padding: 2rem;
-    background-color: #fff; /* Color del fondo según el branding */
+    background-color: #fff; 
 }
 
 .about-us-container {
@@ -160,7 +163,7 @@ h1 {
     margin-bottom: 2vh;
     padding: 2vh 2vw;
     flex-basis: 35%;
-    color: #666666; /* Color del texto según el branding */
+    color: #666666; 
 }
 
 .about-us-text h2 {
@@ -169,12 +172,12 @@ h1 {
 }
 
 .about-us-text p {
-    font-family: 'Quiche Flare', sans-serif;
+    font-family: 'Galano Grotesque', sans-serif;
     margin-bottom: 5vh;
 }
 
 .btn-discover {
-    background-color: #9CADBE; /* Color del botón según el branding */
+    background-color: #9CADBE; 
     color: white;
     padding: 10px 20px;
     border: none;
@@ -202,7 +205,7 @@ h1 {
 }
 
 .right-img {
-    width: 90%; /* Ajusta la imagen para que ocupe todo el espacio disponible */
+    width: 90%; 
     height: auto;
     border: 10px;
     border-radius: 100%;
@@ -210,11 +213,135 @@ h1 {
 }
 
 .left-img {
-    width: 90%; /* Ajusta la imagen para que ocupe todo el espacio disponible */
+    width: 90%; 
     height: auto;
     border: 10px;
     border-radius: 100%;
     margin-right: 5vw;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 4vw;
+    background-color: #fff; 
+}
+
+.content-wrapper {
+    display: flex;
+    margin: auto;
+}
+
+.text-content {
+    flex-basis: 50%;
+    padding-right: 20px; 
+}
+
+.text-content h1 {
+    font-family: 'Galano Grotesque', sans-serif;
+    color: #666666;
+}
+.text-content h2 {
+    font-family: 'Galano Grotesque', sans-serif;
+    color: #9CADBE;
+}
+
+.text-content p {
+    font-family: 'Quiche Flare', sans-serif;
+    font-size: 2.5vh;
+    color: #666666;
+    max-width: 22vw;
+}
+
+.text-content span {
+    font-family: 'Galano Grotesque', sans-serif ;
+    font-weight: bold;
+    color: #666666;
+}
+
+.image-content {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.image-content img {
+    width: 50%; 
+    margin-bottom: 20px; 
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4vh 4vw;
+}
+
+.contact-content {
+    flex-basis: 60%
+}
+
+.contact-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info, .contact-map {
+    margin-bottom: 2vh;
+}
+
+.contact-details {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-details li {
+    font-family: 'Quiche Flare', sans-serif;
+    color: #666666;
+    padding-bottom: 1vh;
+}
+
+.contact-details li a {
+    font-family: 'Quiche Flare', sans-serif;
+    color: #666666;
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    max-width:max-content;
+}
+
+.contact-details img {
+    width: 1.5vw;
+    padding-right: 0.5vw;
+}
+
+.contact-section a:hover {
+    color: #9CADBE;
+}
+
+.contact-section p:hover {
+    color:#9CADBE;
+}
+
+.contact-section h2 {
+    font-family: 'Galano Grotesque', sans-serif;
+    color: #666666;
+}
+
+.contact-section h4 {
+    font-family: 'Galano Grotesque', sans-serif;
+    color: #666666;
+}
+
+.contact-section p {
+    font-family: 'Quiche Flare', sans-serif;
+    color: #666666;
+}
+
+.contact-image {
+    flex-basis: 40%
 }
 
 footer {
@@ -253,9 +380,9 @@ footer {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Muestra los ítems de la lista en línea */
-    justify-content: center; /* Centra los ítems en el contenedor */
-    align-items: center; /* Alinea los ítems verticalmente */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     flex-direction: column;
 }
 
@@ -271,6 +398,7 @@ footer {
 .footer-section img {
     padding-right: 0.5vw;
 }
+
 .footer-section a {
     color: white;
 }
