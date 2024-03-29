@@ -268,7 +268,8 @@ h1 {
 }
 
 .image-content img {
-    max-width: 50%;
+    max-width: 100%;
+    height: 80%;
 }
 
 .contact-section {
@@ -572,6 +573,78 @@ footer {
     .main-container-text {
         font-size: 1.8vh;
     }
+
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-content {
+        flex-basis: 100%;
+    }
+    
+    .text-content h1, h2, span {
+        font-size: 3vh ;
+    }
+    
+    .text-content p {
+        font-family: 'Quiche Flare', sans-serif;
+        font-size: 2.5vh;
+        color: #666666;
+        max-width: 80vw;
+    }
+
+    .image-content {
+        display: none;
+    }
+
+    .image-content img {
+        display: none;
+    }
+
+    .staff-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2vh auto;
+        max-width: 90vw; 
+    }
+
+    .staff-card {
+        background-color: #9CADBE; 
+        border-radius: 1vw;
+        margin: 2vh;
+        padding: 2vh;
+        width: 50vw; 
+        text-align: center; 
+    }
+
+    .staff-image {
+        width: 25vw; 
+    }
+
+    .contact-details li, p {
+        font-size: 2vh;
+    }
+
+    .contact-map p {
+       display: flex;
+       flex-wrap: wrap;
+    }
+
+    .contact-map iframe {
+        display: block;
+        margin: 0 auto;
+        width: 90vw;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 768px) {
