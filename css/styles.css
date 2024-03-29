@@ -310,6 +310,7 @@ h1 {
     display: flex;
     justify-content: left;
     max-width:max-content;
+    font-size: 2vh;
 }
 
 .contact-details img {
@@ -328,16 +329,19 @@ h1 {
 .contact-section h2 {
     font-family: 'Galano Grotesque', sans-serif;
     color: #666666;
+    font-size: 3vh;
 }
 
 .contact-section h4 {
     font-family: 'Galano Grotesque', sans-serif;
     color: #666666;
+    font-size: 2vh; 
 }
 
 .contact-section p {
     font-family: 'Quiche Flare', sans-serif;
     color: #666666;
+    font-size: 2vh;
 }
 
 .staff-container {
