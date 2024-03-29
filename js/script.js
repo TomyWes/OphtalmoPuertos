@@ -1,15 +1,19 @@
 function toggleMenu() {
-    var navLinks = document.getElementById("navLinks");
-    var overlay = document.querySelector(".overlay");
-    navLinks.classList.toggle("active");
-    overlay.classList.toggle("active");
-}
+    const menu = document.getElementById('navLinks');
+    const hamburger = document.querySelector('.hamburger');
+    const servicesDropdown = document.querySelector(".services-dropdown");
 
-function closeMenu() {
-    var navLinks = document.getElementById("navLinks");
-    var overlay = document.querySelector(".overlay");
-    navLinks.classList.remove("active");
-    overlay.classList.remove("active");
+    menu.classList.toggle('active');
+
+    if (menu.classList.contains('active')) {
+        hamburger.textContent = '✖'; 
+    } else {
+        hamburger.textContent = '☰'; 
+    }
+
+    if (servicesDropdown.classList.contains('active')) {
+        servicesDropdown.classList.remove('active');
+    }
 }
 
 function scrollToNextSection() {
