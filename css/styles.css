@@ -82,7 +82,7 @@ h1 {
     transition: all 0.3s ease;
     color: white;
     text-decoration: none;
-    font-size: 1.4vw; 
+    font-size: 1vw; 
     font-family: 'Galano Grotesque', sans-serif;
 }
 
@@ -91,11 +91,11 @@ h1 {
 }
 
 .nav-links li a.active {
-    color: #666666; /* Color de resalte */
+    color: #666666; 
 }
 
 .hamburger {
-    display: none; /* Oculto por defecto */
+    display: none; 
     cursor: pointer;
 }
 
@@ -114,17 +114,17 @@ h1 {
 }
 
 .hero-button {
-    padding: 1vh 2vw; /* Ajusta el espaciado interno */
-    background-color: #9CADBE; /* Color de fondo blanco */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin bordes */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 2.5vh; /* Tamaño de letra */
-    font-weight: bold; /* Negrita */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    cursor: pointer; /* Estilo del cursor como indicador de clic */
-    transition: all 0.3s ease; /* Transición suave para los efectos hover y focus */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto elevado */
+    padding: 1vh 2vw; 
+    background-color: #9CADBE; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 2.5vh; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     bottom: 10%;
     position: absolute;
     font-family: 'Galano Grotesque', sans-serif;
@@ -279,7 +279,7 @@ h1 {
 }
 
 .contact-content {
-    flex-basis: 60%
+    flex-basis: 100%
 }
 
 .contact-details-container {
@@ -312,8 +312,8 @@ h1 {
 }
 
 .contact-details img {
-    width: 1.5vw;
-    padding-right: 0.5vw;
+    width: 1.5em;
+    padding-right: 0.5em;
 }
 
 .contact-section a:hover {
@@ -337,10 +337,6 @@ h1 {
 .contact-section p {
     font-family: 'Quiche Flare', sans-serif;
     color: #666666;
-}
-
-.contact-image {
-    flex-basis: 40%
 }
 
 .staff-container {
@@ -444,7 +440,8 @@ footer {
 }
 
 .footer-section img {
-    padding-right: 0.5vw;
+    width: 1em;
+    padding-right: 0.5em;
 }
 
 .footer-section a {
@@ -461,6 +458,120 @@ footer {
     font-size: 1.4vh;
     display: flex;
     justify-content: left;
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer-section li {
+        font-size: 2.5vh;
+    }
+    
+    .footer-section p {
+        font-size: 2.5vh;
+    }
+
+    .footer-section h3 {
+        font-size: 2.5vh;
+    }
+    
+    header {
+        height: 10vh;
+        position: sticky;
+    }
+
+    .logo {
+        width: 10vw;
+        height: auto;
+    }
+
+    .hamburger {
+        display: block;
+        background-color: #9CADBE;
+        border: none;
+        color: white;
+        padding: 2vh 3vw; 
+        font-size: 5vh; 
+        cursor: pointer;
+        position: absolute; 
+        z-index: 1500; 
+        top: 1vh;
+        right: 2vw; 
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100vw; 
+        height: 100vh; 
+        width: 50vw; 
+        background-color: #9CADBE;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start; 
+        transition: right 0.3s ease;
+        z-index: 1000; 
+        padding-top: 4vh;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        width: 100%;
+        padding: 3vh 0; 
+        padding-left: 3vw;
+    }
+
+    .nav-links li a {
+        font-size: 2.5vh; 
+        padding: 2vh 2vw; 
+        text-align: left;
+        width: 100%; 
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 998; 
+    }
+    
+    .overlay.active {
+        display: block;
+    } 
+
+    .nav-links.active {
+        right: 0; 
+    }
+
+    .hamburger.active {
+        position: fixed;
+        top: 2vh;
+        right: 2vw;
+        z-index: 1501; 
+    }
+    
+    .main-section-landing {
+        background-size: contain;
+    }
+
+    .main-container-text {
+        font-size: 1.8vh;
+    }
 }
 
 @media (max-width: 768px) {
@@ -526,7 +637,7 @@ footer {
         left: 0;
         height: 100vh;
         width: 100vw;
-        z-index: 998; /* Detrás del menú y el botón */
+        z-index: 998; 
     }
     
     .overlay.active {
@@ -596,11 +707,6 @@ footer {
 
     .image-content img {
         display: none;
-    }
-
-    .contact-details img {
-        width: 5vw;
-        padding-right: 1.5vw;
     }
 
     .contact-details li {
