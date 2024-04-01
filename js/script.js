@@ -1,20 +1,19 @@
 function toggleMenu() {
     const menu = document.getElementById('navLinks');
     const hamburger = document.querySelector('.hamburger');
-    const servicesDropdown = document.querySelector(".services-dropdown");
+    const body = document.body;
 
     menu.classList.toggle('active');
 
     if (menu.classList.contains('active')) {
-        hamburger.textContent = '✖'; 
+        hamburger.textContent = 'X';
+        body.style.overflow = 'hidden';
     } else {
-        hamburger.textContent = '☰'; 
-    }
-
-    if (servicesDropdown.classList.contains('active')) {
-        servicesDropdown.classList.remove('active');
+        hamburger.textContent = '☰';
+        body.style.overflow = '';
     }
 }
+
 
 function scrollToNextSection() {
     document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
