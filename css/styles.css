@@ -266,14 +266,12 @@ h1 {
 
 .image-content {
     flex-basis: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .image-content img {
-    max-width: 100%;
-    height: 80%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .contact-section {
@@ -415,12 +413,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2vw;
 }
 
 .services-landing-div img {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .services-btn {
@@ -436,6 +435,7 @@ h1 {
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-family: 'Galano Grotesque', sans-serif;
+    margin-top: 2vw;
 }
 
 .services-btn:hover,
@@ -448,6 +448,46 @@ h1 {
 .services-btn:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el título y las tarjetas en el medio */
+    margin-bottom: 4rem; /* Ajusta según sea necesario */
+    margin-top: 4rem;
+}
+
+.services-title {
+    font-size: 2rem; /* Tamaño de ejemplo */
+    text-align: center; /* Alinea el texto del título al centro */
+    margin-bottom: 2rem; /* Espacio debajo del título */
+    font-family: 'Galano Grotesque', sans-serif;
+    color: #9CADBE;
+}
+
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea las tarjetas en el centro */
+    gap: 1rem; /* Agrega espacio entre tus tarjetas */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.service-card {
+    width: calc(33.333% - 1rem); /* Para 3 tarjetas por fila con un espacio de 1rem */
+    padding: 1rem; /* Padding de ejemplo */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra de ejemplo */
+    background: #ffffff; /* Color de fondo de ejemplo */
+    border-radius: 8px; /* Radio de borde de ejemplo */
+    text-align: center; /* Alinea el texto de la tarjeta al centro */
+    background-color: #9CADBE;
+}
+
+.service-card p {
+    margin-bottom: 0.5rem;
+    font-family: 'Quiche Flare', sans-serif;
+    color: white;
 }
 
 footer {
@@ -861,6 +901,22 @@ footer {
     .staff-image {
         width: 35vw;
         height: 35vw;
+    }
+
+    .services-landing {
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    .services-landing img {
+        margin-top: 10vw;
+    }
+
+    .services-btn {
+        margin-top: 6vw;
+    }
+
+    .service-card p {
     }
 
     .footer-content {
