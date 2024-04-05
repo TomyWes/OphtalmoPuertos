@@ -212,7 +212,7 @@ h1 {
 }
 
 .right-img {
-    width: 90%;
+    width: 80%;
     height: auto;
     border: 10px;
     border-radius: 100%;
@@ -220,7 +220,7 @@ h1 {
 }
 
 .left-img {
-    width: 90%;
+    width: 80%;
     height: auto;
     border: 10px;
     border-radius: 100%;
@@ -237,11 +237,17 @@ h1 {
 
 .content-wrapper {
     display: flex;
+    align-items: stretch;
     margin: auto;
+    width: 100%;
 }
 
 .text-content {
-    flex-basis: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
 }
 
 .text-content h1 {
@@ -268,12 +274,15 @@ h1 {
 }
 
 .image-content {
-    flex-basis: 50%;
+    flex: 1;
+    max-width: 50%;
 }
 
 .image-content img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    max-height: 85vh;
     border-radius: 10px;
 }
 
@@ -306,7 +315,8 @@ h1 {
 .contact-details li {
     font-family: 'Quiche Flare', sans-serif;
     color: #666666;
-    padding-bottom: 1vh;
+    padding-bottom: 1.5vh;
+    padding-top: 1.5vh;
 }
 
 .contact-details li a {
@@ -315,8 +325,9 @@ h1 {
     text-decoration: none;
     display: flex;
     justify-content: left;
+    align-items: center;
     max-width: max-content;
-    font-size: 2vh;
+    font-size: 2.5vh;
 }
 
 .contact-details img {
@@ -335,19 +346,20 @@ h1 {
 .contact-section h2 {
     font-family: 'Galano Grotesque', sans-serif;
     color: #666666;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 .contact-section h4 {
     font-family: 'Galano Grotesque', sans-serif;
     color: #666666;
-    font-size: 2vh;
+    font-size: 4vh;
 }
 
 .contact-section p {
     font-family: 'Quiche Flare', sans-serif;
     color: #666666;
-    font-size: 2vh;
+    font-size: 2.5vh;
+    margin-bottom: 1.5vh;
 }
 
 .staff-container {
@@ -373,7 +385,7 @@ h1 {
     height: 12vw;     
     border-radius: 50%; 
     object-fit: cover;
-    margin: 1vh auto; 
+    margin: 2vh auto; 
     display: block;   
 }
 
@@ -830,6 +842,7 @@ footer {
 
     .text-content {
         flex-basis: 100%;
+        max-width: 90%;
     }
 
     .text-content h1,
