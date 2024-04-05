@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -34,8 +39,6 @@ body {
     margin: 0;
     background-color: white;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
 }
 
 header {
@@ -401,13 +404,14 @@ h1 {
 .services-landing {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     padding: 2vw;
 }
 
 .services-landing-div {
-    flex-basis: 45%; 
+    flex-basis: 50%; 
+    height: auto;
     text-align: center; 
     display: flex;
     flex-direction: column;
@@ -420,34 +424,6 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-.services-btn {
-    padding: 1vh 2vw;
-    background-color: #9CADBE;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 2.5vh;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: 'Galano Grotesque', sans-serif;
-    margin-top: 2vw;
-}
-
-.services-btn:hover,
-.services-btn:focus {
-    background-color: #666666;
-    color: #fff;
-    outline: none;
-}
-
-.services-btn:active {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
 }
 
 .services-section {
@@ -469,32 +445,32 @@ h1 {
 .services-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Alinea las tarjetas en el centro */
-    gap: 1rem; /* Agrega espacio entre tus tarjetas */
-    width: 100%; /* Ajusta el ancho según sea necesario */
+    justify-content: center; 
+    gap: 1rem; 
+    width: 100%; 
 }
 
 .service-card {
-    width: calc(33.333% - 1rem); /* Para 3 tarjetas por fila con un espacio de 1rem */
-    padding: 1rem; /* Padding de ejemplo */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra de ejemplo */
-    background: #ffffff; /* Color de fondo de ejemplo */
-    border-radius: 8px; /* Radio de borde de ejemplo */
-    text-align: center; /* Alinea el texto de la tarjeta al centro */
+    width: calc(33.333% - 1rem); 
+    padding: 1rem; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    border-radius: 10px; 
+    text-align: center; 
     background-color: #9CADBE;
 }
 
-.service-card p {
+.service-card h3 {
     margin-bottom: 0.5rem;
     font-family: 'Quiche Flare', sans-serif;
     color: white;
+    font-size: 16px;
 }
 
 footer {
     background-color: #9CADBE;
     color: #ffffff;
-    text-align: center;
-    padding: 2vh 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .footer-content {
@@ -504,7 +480,7 @@ footer {
 }
 
 .footer-section {
-    margin: 1vh 5vw;
+    margin:1vh 5vw;
     text-align: center;
 }
 
@@ -554,11 +530,14 @@ footer {
 }
 
 .footer-bottom {
-    padding-top: 2vh;
+    padding: 2vh 2vw;
     border-top: 1px solid #ffffff;
     font-size: 1.4vh;
     display: flex;
     justify-content: left;
+    background-color: #9CADBE;
+    color: white;
+    font-family: 'Quiche Flare', sans-serif;
 }
 
 @media (max-width: 1024px) {
@@ -731,6 +710,15 @@ footer {
         display: block;
         margin: 0 auto;
         width: 90vw;
+    }
+
+    .services-landing {
+        flex-direction: column;
+        padding: 2vw;
+    }
+
+    .services-landing img {
+        margin-top: 10vw;
     }
 
     .footer-content {
@@ -910,13 +898,6 @@ footer {
 
     .services-landing img {
         margin-top: 10vw;
-    }
-
-    .services-btn {
-        margin-top: 6vw;
-    }
-
-    .service-card p {
     }
 
     .footer-content {

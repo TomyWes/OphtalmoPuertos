@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="icon" href="./public/images/op logo-03 32x32.png" type="image/x-icon" sizes="32x32">
     <link rel="icon" href="./public/images/op logo-03 32x32.png" type="image/x-icon" sizes="192x192">
 </head>
+
 <body>
 
     <div class="overlay" onclick="closeMenu()"></div>
@@ -32,78 +34,79 @@
         <div class="services-landing">
             <div class="services-landing-div">
                 <img src="public/images/services img 1.png" alt="Oftalmología">
-                <button class='services-btn' onclick="scrollToOftalmo()">Oftalmología</button>
+
+                <div class="services-section" id="oftalmologia">
+                    <h2 class="services-title">Oftalmología</h2>
+                    <div class="services-cards">
+                        <div class="service-card">
+                            <h3>Controles visuales anuales</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Lentes</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Fondo de ojos</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Cirugías menores</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Cirugías párpados</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Cirugías de cataratas</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Cirugia excimer laser</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Glaucoma superficie ocular</h3>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
             <div class="services-landing-div">
                 <img src="public/images/services img 2.jpg" alt="Estética Facial">
-                <button class='services-btn' onclick="scrollToEstetica()">Estética</button>
+
+                <div class="services-section" id="estetica">
+                    <h2 class="services-title">Estética</h2>
+                    <div class="services-cards">
+                        <div class="service-card">
+                            <h3>Peeling</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Skin Booster</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Bioestimuladores de colágeno</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Plasma rico en plaquetas</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Toxina botulínica</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Rellenos</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Armonización facial</h3>
+                        </div>
+                        <div class="service-card">
+                            <h3>Tratamiento de ojeras</h3>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
-        <div class="services-section" id="oftalmologia">
-            <h2 class="services-title">Oftalmología</h2>
-            <div class="services-cards">
-                <div class="service-card">
-                    <p>Controles visuales anuales</p>
-                </div>
-                <div class="service-card">
-                    <p>Lentes</p>
-                </div>
-                <div class="service-card">
-                    <p>Fondo de ojos</p>
-                </div>
-                <div class="service-card">
-                    <p>Cirugías menores</p>
-                </div>
-                <div class="service-card">
-                    <p>Cirugías párpados</p>
-                </div>
-                <div class="service-card">
-                    <p>Cirugías de cataratas y segmento anterior</p>
-                </div>
-                <div class="service-card">
-                    <p>Cirugia excimer laser para miopia y astigmatismo</p>
-                </div>
-                <div class="service-card">
-                    <p>Glaucoma superficie ocular</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="services-section" id="estetica">
-            <h2 class="services-title">Estética</h2>
-            <div class="services-cards">
-                <div class="service-card">
-                    <p>Peeling</p>
-                </div>
-                <div class="service-card">
-                    <p>Skin Booster</p>
-                </div>
-                <div class="service-card">
-                    <p>Bioestimuladores</p>
-                </div>
-                <div class="service-card">
-                    <p>Plasma rico en plaquetas</p>
-                </div>
-                <div class="service-card">
-                    <p>Toxina botulínica</p>
-                </div>
-                <div class="service-card">
-                    <p>Rellenos</p>
-                </div>
-                <div class="service-card">
-                    <p>Armonización facial</p>
-                </div>
-                <div class="service-card">
-                    <p>Tratamiento de ojeras</p>
-                </div>
-            </div>
-        </div>
-        
     </main>
 
     <footer>
- 
+
         <div class="footer-content">
 
             <div class="footer-section">
@@ -133,11 +136,14 @@
             </div>
 
         </div>
-        <div class="footer-bottom">
-            &copy; 2024 OphtalmoPuertos
-        </div>
+
     </footer>
+
+    <div class="footer-bottom">
+        &copy; 2024 OphtalmoPuertos
+    </div>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
