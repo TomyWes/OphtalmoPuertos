@@ -11,6 +11,10 @@ ul {
     list-style-type: none;
 }
 
+html {
+    scroll-padding-top: 10vh;
+}
+
 @font-face {
     font-family: 'Galano Grotesque';
     src: url('../public/fonts/GalanoGrotesqueAlt-Regular.woff2') format('woff2');
@@ -212,7 +216,7 @@ h1 {
 }
 
 .right-img {
-    width: 80%;
+    width: 75%;
     height: auto;
     border: 10px;
     border-radius: 100%;
@@ -220,7 +224,7 @@ h1 {
 }
 
 .left-img {
-    width: 80%;
+    width: 75%;
     height: auto;
     border: 10px;
     border-radius: 100%;
@@ -529,8 +533,7 @@ footer {
     align-items: center;
 }
 
-.footer-section img {
-    width: 1em;
+.icons {
     padding-right: 0.5em;
 }
 
@@ -652,8 +655,16 @@ footer {
         background-size: contain;
     }
 
-    .main-container-text {
-        font-size: 1.8vh;
+    .hero-button {
+        bottom: 20%;
+    }
+
+    .main-container-text p {
+        font-size: 1.5vh;
+    }
+
+    .btn-discover {
+        font-size: 2vh;
     }
 
     .content-wrapper {
@@ -663,6 +674,7 @@ footer {
 
     .text-content {
         flex-basis: 100%;
+        max-width: 90%;
     }
 
     .text-content h1,
@@ -734,12 +746,17 @@ footer {
         margin-top: 10vw;
     }
 
-    .footer-content {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    .services-title {
+        font-size: 8vw;
     }
 
+    .service-card {
+        width: calc(40% - 1rem);
+    }
+
+    .service-card h3 {
+        font-size: 3vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -816,12 +833,16 @@ footer {
     }
 
     .main-section-landing {
-        background-size: contain;
+        background-size:contain;
+        height: 80vh;
     }
 
     .main-container-text {
         flex-basis: 90%;
-        font-size: 2.5vh;
+    }
+
+    .main-container-text p {
+        font-size: 2vh;
     }
 
     .main-container-image {
@@ -912,6 +933,14 @@ footer {
 
     .services-landing img {
         margin-top: 10vw;
+    }
+
+    .services-title {
+        font-size: 8vw;
+    }
+
+    .service-card {
+        width: calc(40% - 1rem);
     }
 
     .footer-content {
