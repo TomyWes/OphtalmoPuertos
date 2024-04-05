@@ -17,11 +17,3 @@ function toggleMenu() {
 function scrollToNextSection() {
     document.getElementById('next-section').scrollIntoView({ behavior: 'smooth' });
 }
-
-function scrollToOftalmo() {
-    document.getElementById('oftalmologia').scrollIntoView({ behavior: 'smooth' });
-}
-
-function scrollToEstetica() {
-    document.getElementById('estetica').scrollIntoView({ behavior: 'smooth' });
-}

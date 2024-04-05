@@ -441,15 +441,15 @@ h1 {
 .services-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el título y las tarjetas en el medio */
-    margin-bottom: 4rem; /* Ajusta según sea necesario */
+    align-items: center; 
+    margin-bottom: 4rem; 
     margin-top: 4rem;
 }
 
 .services-title {
-    font-size: 2rem; /* Tamaño de ejemplo */
-    text-align: center; /* Alinea el texto del título al centro */
-    margin-bottom: 2rem; /* Espacio debajo del título */
+    font-size: 3vw; 
+    text-align: center;
+    margin-bottom: 2rem; 
     font-family: 'Galano Grotesque', sans-serif;
     color: #9CADBE;
 }
@@ -463,10 +463,11 @@ h1 {
 }
 
 .service-card {
-    width: calc(33.333% - 1rem); 
+    width: calc(33.333% - 1rem);
+    height: 5vh;
     padding: 1rem; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-    border-radius: 10px; 
+    border-radius: 15px;
     text-align: center; 
     background-color: #9CADBE;
 }
