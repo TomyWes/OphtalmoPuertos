@@ -15,11 +15,14 @@ html {
     scroll-padding-top: 10vh;
 }
 
+.icons {
+    padding-right: 0.5em;
+}
+
 @font-face {
     font-family: 'Galano Grotesque';
     src: url('../public/fonts/GalanoGrotesqueAlt-Regular.woff2') format('woff2');
     font-weight: 400;
-    /* Regular */
     font-style: normal;
 }
 
@@ -27,7 +30,6 @@ html {
     font-family: 'Galano Grotesque';
     src: url('../public/fonts/GalanoGrotesque-Bold.woff2') format('woff2');
     font-weight: 700;
-    /* Bold */
     font-style: normal;
 }
 
@@ -35,7 +37,6 @@ html {
     font-family: 'Quiche Flare';
     src: url('../public/fonts/Quiche\ Flare\ W00\ Regular.woff2') format('woff2');
     font-weight: 400;
-    /* Regular */
     font-style: normal;
 }
 
@@ -70,12 +71,6 @@ header {
     border-radius: 100%;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.4vw;
-    color: #666666;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -90,7 +85,6 @@ h1 {
 }
 
 .nav-links li a {
-    transition: all 0.3s ease;
     color: white;
     text-decoration: none;
     font-size: 1vw;
@@ -206,11 +200,6 @@ h1 {
     background-color: #666666;
     color: #fff;
     outline: none;
-}
-
-.hero-button:active {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(2px);
 }
 
 .main-container-image {
@@ -435,7 +424,7 @@ h1 {
 
 .services-landing-div img {
     width: 70%;
-    height: auto;
+    height: 75vh;
     border-radius: 10px;
 }
 
@@ -482,6 +471,7 @@ h1 {
 
 footer {
     background-color: #9CADBE;
+    width: 100vw;
     color: #ffffff;
     padding-top: 2vh;
     padding-bottom: 2vh;
@@ -506,13 +496,11 @@ footer {
 
 .footer-section p {
     font-size: 2vh;
-    line-height: 1.8;
     font-family: 'Quiche Flare', sans-serif;
     color: white;
 }
 
 .footer-section ul {
-    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
@@ -528,10 +516,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.icons {
-    padding-right: 0.5em;
 }
 
 .footer-section a {
@@ -555,8 +539,6 @@ footer {
 
 @media (max-width: 1024px) {
     .footer-content {
-        display: flex;
-        justify-content: center;
         flex-direction: column;
     }
 
@@ -711,6 +693,10 @@ footer {
         padding: 2vh;
         width: 50vw;
         text-align: center;
+    }
+
+    .staff-card h4 {
+        font-size: 2.5vw;
     }
 
     .staff-image {
@@ -914,6 +900,10 @@ footer {
         text-align: center;
     }
 
+    .staff-card h4 {
+        font-size: 3.5vw;
+    }
+
     .staff-image {
         width: 35vw;
         height: 35vw;
@@ -936,9 +926,11 @@ footer {
         width: calc(40% - 1rem);
     }
 
+    .service-card h3 {
+        font-size: 3.5vw;
+    }
+
     .footer-content {
-        display: flex;
-        justify-content: center;
         flex-direction: column;
     }
 
