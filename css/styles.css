@@ -181,6 +181,11 @@ header {
     margin-bottom: 5vh;
 }
 
+.highlight-text {
+    color: #A28980;
+    font-weight: 550;
+}
+
 .btn-discover {
     background-color: #9CADBE;
     color: white;
@@ -205,8 +210,8 @@ header {
 }
 
 .index-img {
-    width: 70%;
-    height: auto;
+    width: 30vw;
+    height: 65vh;
     border: 10px;
     border-radius: 100%;
     margin-left: 5vw;
@@ -214,7 +219,7 @@ header {
 }
 
 .embedded-image {
-    display: none; 
+    display: none;
 }
 
 .about-section {
@@ -689,7 +694,7 @@ footer {
 
     .services-landing img {
         width: 85%;
-        height: 50vh;
+        height: 40vh;
         margin-top: 10vw;
     }
 
@@ -799,7 +804,7 @@ footer {
     }
 
     .main-container-text p {
-        font-size: 2vh;
+        font-size: 1.9vh;
     }
 
     .main-container-image {
@@ -811,14 +816,14 @@ footer {
     }
 
     .embedded-image {
-        display: flex; /* Muestra la imagen en pantallas pequeñas */
+        display: flex;
         text-align: center;
         margin: 2vh 0;
     }
-    
+
     .embedded-image img {
-        max-width: 100%;
-        height: auto;
+        width: 70vw;
+        height: 30vh;
         border-radius: 100%;
     }
 
@@ -892,7 +897,7 @@ footer {
 
     .services-landing img {
         width: 95%;
-        height: 30vh;
+        height: 28vh;
         margin-top: 10vw;
     }
 
