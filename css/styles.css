@@ -430,13 +430,15 @@ header {
 }
 
 .services-landing-div img {
-    width: 70%;
+    width: 60vw;
     height: 70vh;
+    margin-bottom: 2vw;
     border-radius: 10px;
 }
 
 .services-section {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     margin-bottom: 4rem;
@@ -453,27 +455,40 @@ header {
 
 .services-cards {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
     width: 100%;
 }
 
 .service-card {
-    width: calc(33.333% - 1rem);
-    height: 5vh;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 35vh;
+    margin: 1vw;
+    padding: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     text-align: center;
-    background-color: #9CADBE;
+}
+
+.separator-gray {
+    font-size: 3vh;
+    color: #666666;
+    margin: 0.5vh auto;
+    font-weight: bold;
 }
 
 .service-card h3 {
     margin-bottom: 0.5rem;
     font-family: 'Quiche Flare', sans-serif;
-    color: white;
+    color:#666666;
     font-size: 16px;
+    break-inside: avoid-column; 
 }
 
 footer {
@@ -688,10 +703,6 @@ footer {
         width: 90vw;
     }
 
-    .services-landing {
-        padding: 2vw;
-    }
-
     .services-landing img {
         width: 85%;
         height: 40vh;
@@ -703,7 +714,7 @@ footer {
     }
 
     .service-card {
-        width: calc(40% - 1rem);
+        width: 40vw;
     }
 
     .service-card h3 {
@@ -823,7 +834,7 @@ footer {
 
     .embedded-image img {
         width: 70vw;
-        height: 30vh;
+        height: 35vh;
         border-radius: 100%;
     }
 
@@ -891,12 +902,12 @@ footer {
         height: 35vw;
     }
 
-    .services-landing {
-        padding: 2vw;
-    }
-
     .services-landing img {
-        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 0.5vw;
         height: 28vh;
         margin-top: 10vw;
     }
@@ -905,8 +916,14 @@ footer {
         font-size: 10vw;
     }
 
+    .services-cards {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+    }
+
     .service-card {
-        width: calc(43% - 1rem);
+        width: 40vw;
         height: auto;
     }
 
@@ -917,10 +934,19 @@ footer {
     .footer-content {
         align-items: center;
         flex-direction: column;
+        padding: 3vw;
     }
 
     .footer-content h3 {
-        font-size: 6vw;
+        font-size: 5vw;
+    }
+
+    .footer-content a {
+        font-size: 4.5vw;
+    }
+
+    .footer-content li {
+        font-size: 4.5vw;
     }
 
 }
