@@ -218,6 +218,15 @@ header {
     object-fit: cover;
 }
 
+.index-img-left {
+    width: 30vw;
+    height: 65vh;
+    border: 10px;
+    border-radius: 100%;
+    margin-right: 5vw;
+    object-fit: cover;
+}
+
 .embedded-image {
     display: none;
 }
@@ -631,7 +640,17 @@ footer {
     }
 
     .main-container-text p {
-        font-size: 1.5vh;
+        font-size: 1.8vh;
+    }
+
+    .index-img {
+        width: 40vw;
+        height: 30vh;
+    }
+
+    .index-img-left {
+        width: 40vw;
+        height: 30vh;
     }
 
     .btn-discover {
@@ -826,6 +845,10 @@ footer {
         display: none;
     }
 
+    .index-img-left {
+        display: none;
+    }
+
     .embedded-image {
         display: flex;
         text-align: center;
@@ -834,7 +857,7 @@ footer {
 
     .embedded-image img {
         width: 70vw;
-        height: 35vh;
+        height: 32vh;
         border-radius: 100%;
     }
 
@@ -906,9 +929,9 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 100%;
         padding: 0.5vw;
-        height: 28vh;
+        height: 30vh;
         margin-top: 10vw;
     }
 
